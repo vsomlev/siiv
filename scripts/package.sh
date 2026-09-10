@@ -11,7 +11,22 @@ APP_NAME="Siiv"
 OUT_DIR="${1:-dist}"
 BUILD_DIR="$(mktemp -d)"
 STAGE_DIR="$(mktemp -d)"
-trap 'rm -rf "$BUILD_DIR" "$STAGE_DIR"' EXIT
+APP=""
+
+LSREGISTER=/System/Library/Frameworks/CoreServices.framework/Frameworks/\
+LaunchServices.framework/Support/lsregister
+
+cleanup() {
+    # macOS registers every app bundle it notices, this throwaway build
+    # included. Left behind, those registrations outlive the folder and can
+    # shadow the copy you actually installed, which shows up as an old icon
+    # or an old build launching. Drop them before the folder goes.
+    for stray in "$APP" "$STAGE_DIR/$APP_NAME.app"; do
+        [ -n "$stray" ] && [ -d "$stray" ] && "$LSREGISTER" -u "$stray" 2>/dev/null
+    done
+    rm -rf "$BUILD_DIR" "$STAGE_DIR"
+}
+trap cleanup EXIT
 
 # Xcode proper is needed; the command line tools alone cannot build an app.
 if ! xcodebuild -version > /dev/null 2>&1; then
