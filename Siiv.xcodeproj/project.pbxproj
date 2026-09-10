@@ -29,6 +29,11 @@
 			path = Siiv;
 			sourceTree = "<group>";
 		};
+		34BEB5902FFADD70004C57B8 /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				34BEB5742FFADD6F004C57B8 /* Siiv */,
+				34BEB5902FFADD70004C57B8 /* Resources */,
 				34BEB5732FFADD6F004C57B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +81,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				34BEB5742FFADD6F004C57B8 /* Siiv */,
+				34BEB5902FFADD70004C57B8 /* Resources */,
 			);
 			name = Siiv;
 			packageProductDependencies = (
@@ -141,7 +148,7 @@
 		34BEB5802FFADD70004C57B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = siiv;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -172,7 +179,7 @@
 		34BEB5812FFADD70004C57B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = siiv;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;

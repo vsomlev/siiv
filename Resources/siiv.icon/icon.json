@@ -1,0 +1,75 @@
+{
+  "fill" : {
+    "linear-gradient" : [
+      "display-p3:0.00000,1.00000,0.48834,1.00000",
+      "display-p3:0.00000,0.80975,0.96783,1.00000"
+    ]
+  },
+  "groups" : [
+    {
+      "blend-mode-specializations" : [
+        {
+          "appearance" : "tinted",
+          "value" : "normal"
+        }
+      ],
+      "blur-material" : null,
+      "hidden" : false,
+      "layers" : [
+        {
+          "fill-specializations" : [
+            {
+              "value" : "automatic"
+            },
+            {
+              "appearance" : "dark",
+              "value" : {
+                "linear-gradient" : [
+                  "display-p3:0.00000,1.00000,0.48834,1.00000",
+                  "display-p3:0.00000,0.80975,0.96783,1.00000"
+                ]
+              }
+            }
+          ],
+          "glass" : true,
+          "hidden" : false,
+          "image-name" : "shape 2.png",
+          "name" : "shape 2",
+          "position" : {
+            "scale" : 0.9,
+            "translation-in-points" : [
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "lighting" : "individual",
+      "opacity-specializations" : [
+        {
+          "appearance" : "tinted",
+          "value" : 1
+        }
+      ],
+      "refractivity" : {
+        "depth" : 0.6901953125,
+        "enabled" : false,
+        "strength" : 0.935
+      },
+      "shadow" : {
+        "kind" : "layer-color",
+        "opacity" : 0.5
+      },
+      "specular" : true,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.24
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : [
+      "macOS"
+    ]
+  }
+}
