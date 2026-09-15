@@ -5,28 +5,22 @@
 <h1 align="center">Siiv</h1>
 
 Siiv (Simple Image Viewer) is a small macOS image viewer. Open an image, then
-move through the folder with the arrow keys or a trackpad swipe. That is the
-whole idea.
-
+move through the folder with the arrow keys or a trackpad swipe. Simple as.
 ## Install
 
 Download the `.dmg` from [Releases](../../releases), open it, and drag Siiv
-into Applications. Needs macOS 14 (Sonoma) or newer.
+into Applications. Needs macOS 14 (Sonoma) or newer. I think.
 
-The app is signed ad-hoc rather than with a paid Apple developer account, so
-macOS stops it the first time. Open it once from
-**System Settings → Privacy & Security → Open Anyway**, or clear the quarantine
+The app is not signed with a paid Apple developer account, so macOS stops it the first time. Open it once from **System Settings → Privacy & Security → Open Anyway**, or clear the quarantine
 flag yourself:
 
 ```sh
 xattr -dr com.apple.quarantine /Applications/Siiv.app
 ```
 
-Then right-click any image in Finder and choose **Open With → Siiv**.
-
 ## Shortcuts
 
-| Key | Does |
+| Key | Function |
 | --- | --- |
 | `←` `→` or `↑` `↓` | Previous / next image |
 | `Home` `End` or `⌘←` `⌘→` | First / last image |
@@ -34,7 +28,7 @@ Then right-click any image in Finder and choose **Open With → Siiv**.
 | `Esc` | Leave fullscreen, otherwise quit |
 | `⌫` | Move the image to the Bin |
 | `O` | Open with another app |
-| `S` | Share |
+| `S` | Show the Share popup |
 | `⌘O` | Open an image |
 | `⌘,` | Settings |
 
@@ -52,5 +46,3 @@ scripts/package.sh          # writes dist/Siiv-<version>.dmg
 ```
 
 Built with Xcode 26; needs Xcode 16 or newer for the project format.
-Pushing a `v*` tag builds the disk image on CI and attaches it to the
-matching GitHub release.
