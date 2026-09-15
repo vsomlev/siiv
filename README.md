@@ -45,4 +45,8 @@ double tap to zoom in and out.
 scripts/package.sh          # writes dist/Siiv-<version>.dmg
 ```
 
-Built with Xcode 26; needs Xcode 16 or newer for the project format.
+Built with Xcode 27; needs Xcode 16 or newer for the project format.
+
+## License
+
+[MIT](LICENSE). Do what you like with it.
