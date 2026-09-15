@@ -1,4 +1,8 @@
-# Siiv
+<p align="center">
+  <img src="docs/icon.png" alt="The Siiv app icon" width="160">
+</p>
+
+<h1 align="center">Siiv</h1>
 
 Siiv (Simple Image Viewer) is a small macOS image viewer. Open an image, then
 move through the folder with the arrow keys or a trackpad swipe. That is the
