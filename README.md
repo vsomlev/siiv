@@ -35,10 +35,6 @@ xattr -dr com.apple.quarantine /Applications/Siiv.app
 On the trackpad: swipe sideways to change image, pinch to zoom, two-finger
 double tap to zoom in and out.
 
-## Settings
-
-<img src="docs/settings.png" alt="The Siiv settings window" width="460">
-
 ## Build it yourself
 
 ```sh
